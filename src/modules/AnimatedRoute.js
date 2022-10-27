@@ -3,7 +3,7 @@ import Contact from "../pages/Contact.js";
 import Works from "../pages/Works.js";
 import AboutMe from "../pages/AboutMe.js";
 import NavBar from "./NavBar.js";
-import Backgrond from './Background.js';
+// import Backgrond from './Background.js';
 
 import {AnimatePresence} from 'framer-motion';
 
@@ -14,7 +14,7 @@ export default function AnimatedRoute(){
   
   return(
     <div>
-      <Backgrond>
+      {/* <Backgrond> */}
         <NavBar/>
           <AnimatePresence>
             <Routes location={location} key={location.pathname}>
@@ -24,7 +24,7 @@ export default function AnimatedRoute(){
               <Route path="/about" element={<AboutMe />} />
             </Routes>
           </AnimatePresence>
-      </Backgrond>
+      {/* </Backgrond> */}
     </div>
   );
 }

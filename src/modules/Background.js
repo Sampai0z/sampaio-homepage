@@ -1,5 +1,5 @@
-export default function Backgrond(){
+export default function Backgrond(props){
   return(
-    <div id="particles-js"></div>
+    <div id="">{props.childrens}</div>
   );
 }
