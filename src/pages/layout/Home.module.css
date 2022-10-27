@@ -6,7 +6,6 @@
   align-items: center;
   position: relative;
   top: 400px;
-  color:aliceblue;
 }
 .name{
   font-family: 'Rubik', sans-serif;
@@ -62,4 +61,38 @@
 .button_contact:hover{
   color: purple;
   background-color: #202023;
+}
+
+@media (max-width: 1080px) {
+  .page{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 400px;
+  }
+  .name{
+    display: flex;
+    font-size: 40px;
+    text-transform: uppercase;
+    gap: 10px;
+  }
+  .page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+  }
+  .button__{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+
 }

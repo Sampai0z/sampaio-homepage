@@ -1,6 +1,5 @@
-import './App.css';
 import AnimatedRoute from './modules/AnimatedRoute';
-import { BrowserRouter as Router, useLocation} from "react-router-dom";
+import { BrowserRouter as Router} from "react-router-dom";
 
 function App() {
   

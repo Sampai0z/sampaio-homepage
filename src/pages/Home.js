@@ -10,7 +10,7 @@ export default function Home(){
     exit={{x: window.innerWidth, transition:{duration: 0.1}}}
   >
     <div className="container">
-      <div className="row">
+      <div className="row g-0">
         <div className={classes.page}>
             <div>
               <h1 className={classes.name}>Vitor <spam className={classes.last_name}>Sampaio</spam></h1>      

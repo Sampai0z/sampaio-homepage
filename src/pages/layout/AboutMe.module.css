@@ -1,0 +1,60 @@
+.aboutMe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 400px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: relative;
+  right: 30%;
+  top: -100px;
+}
+.name{
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 15px;
+}
+.last_name{
+  color: #3769bb;
+}
+
+.image_profile{
+  left: 20%;
+  position: relative;
+  width: 50%;
+  top: -200px;
+  border-radius: 10%;
+  box-shadow: 6px 10px 20px 5px rgba(58, 54, 54, 0.761);
+}
+.button__{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 400px;
+}
+.button_contact{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  color: white;
+  border: 1px solid purple;
+  border-radius: 20px;
+  width: 160px;
+  padding: 10px;
+  background-color: purple;
+  transition: 0.2s ease-in-out;
+}
+.button_contact:hover{
+  color: purple;
+  background-color: #202023;
+}
