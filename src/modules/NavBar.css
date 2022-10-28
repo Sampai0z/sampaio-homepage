@@ -9,7 +9,7 @@
   gap: 2rem;
   list-style-type: none;
   padding-top: 20px;
-  font-size: 15px;
+  font-size: 20px;
 }
 .nav-bar__image{
   display: flex;
@@ -86,6 +86,7 @@
   position: relative;
   justify-content: right;
   padding: 10px;
+  font-size: 18px;
   z-index: 5;
 }
 
@@ -131,6 +132,9 @@
   padding-right: 20px;
   flex-wrap: nowrap;
   color: white;
+}
+.nav-bar__link{
+  
 }
 
 @media (max-width: 1080px) {
