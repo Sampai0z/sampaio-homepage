@@ -1,5 +1,7 @@
-export default function Backgrond(props){
-  return(
-    <div id="">{props.childrens}</div>
-  );
+import "./Background.css";
+
+function Background(props) {
+  return <div>{props.children}</div>;
 }
+
+export default Background;

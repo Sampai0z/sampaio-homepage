@@ -1,0 +1,125 @@
+.page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 350px;
+}
+
+.text{
+  display: flex;
+  justify-content: left;
+  border-bottom: 1px solid white;
+  padding-bottom: 2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+.text2{
+  color: #3769bb;
+}
+
+.contact,.contacts{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  border: 1px solid white;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #222222;
+  border: 1px solid rgb(45, 45, 45);
+  cursor:pointer;
+}
+.svg{
+  display: flex;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.contacts:hover{
+  color: rgb(52, 49, 77);
+  transition: 0.2s ease-in-out;
+}
+.contact:active{
+  color: rgb(52, 49, 77);
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
+.link:hover{
+  color: rgb(52, 49, 77);
+  transition: 0.2s ease-in-out;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10px;
+  border-radius: 0px;
+}
+
+.second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  border-radius: 0px;
+  flex-direction: column;
+}
+.input{
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  width: 190px;
+  background-color: #222222;
+  border: 1px solid rgb(45, 45, 45);
+   /*height: 35px; */
+}
+
+.textarea{
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  width: 25rem;
+  height: 8rem;
+  background-color: #222222;
+  border: 1px solid rgb(45, 45, 45);
+  resize: none;
+}
+
+.submit{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 13px;
+  color: white;
+  border: 1px solid purple;
+  border-radius: 50px;
+  background-color: purple;
+  transition: 0.2s ease-in-out;
+  width: 200px;
+}
+.submit:hover{
+  color: purple;
+  background-color: #202023;
+}
+
+@media (max-width: 1080px)  {
+  .page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 100px;
+  }
+  .input{
+    width: 150px;
+  }
+  .textarea{
+    width: 20rem;
+  }
+  .contact:hover:active{
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+}

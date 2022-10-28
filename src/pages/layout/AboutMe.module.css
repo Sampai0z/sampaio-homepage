@@ -58,3 +58,35 @@
   color: purple;
   background-color: #202023;
 }
+
+@media (max-width:1080px) {
+  .aboutMe{
+    top: 330px;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    right: 1%;
+    /* top: -100px; */
+  }
+  .image_profile{
+    top: -200px;
+    display: flex;
+  }
+  .name{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 15px;
+  }
+  .button_contact{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+  }
+}

@@ -23,7 +23,6 @@ export default function AboutMe(){
             <div className={classe.content}>
               <div>
                 <h2 className={classe.name}>Vitor <spam className={classe.last_name}>Sampaio</spam></h2>
-                <p>Creative</p>
               </div>
               <div>
                 <p> I started as a programmer in Feb 2022, even though I didn’t have professional experience I did work on solo projects and also did some co-op work (not paid) to have more experience in the area, my projects have been focused on Frontend and I always try to refine my skills for a better interface and experience. Even if I don't know a program I can adapt quickly and I can work things out, I like to work with different technologies.</p>

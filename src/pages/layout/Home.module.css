@@ -20,29 +20,73 @@
   color: #3769bb;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #8A8A8A;
+  top:130px;
+}
+
+.typingDemo {
+  width: 26ch;
+  animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  flex-direction: column;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+.change {
+	font-size: 0;
+}
+.change::before {
+  content: " Developer";
+  font-size: 2rem !important;
+  color: #3769bb;
+  transition: 5s ease-out;
+  animation: changing 5s infinite alternate;
+}
+@keyframes changing {
+  0% {content: " Designer"}
+  30% {content: " Designer"}
+  50% {content: " Developer"}
+  60% {content: " Developer"}
+  100% {content: " Freelancer"}
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .mark{
   margin-top: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #313134;
+  border: 1px solid #313134; 
   border-radius: 10px;
   padding: 10px;
   background-color: #313134;
-}
 
-.sub_title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #8A8A8A;
 }
 .button__{
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 400px;
+  top: 430px;
 }
 .button_contact{
   margin-top: 40px;
@@ -64,15 +108,7 @@
 }
 
 @media (max-width: 1080px) {
-  .page{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 400px;
-  }
+  
   .name{
     display: flex;
     font-size: 40px;
@@ -84,15 +120,33 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 100px;
-    overflow: hidden;
+    top: 200px;
+    /* overflow: hidden; */
   }
   .button__{
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 100px;
+    top: 300px;
+  }
+  .typingDemo{
+    /* max-width: 300px; */
+    width: 26ch;
+    animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    flex-direction: row;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1.5em;
+  }
+  .change::before {
+    /* content: " Design"; */
+    font-size: 1.5rem !important;
+    /* color: #3769bb; */
+    transition: 2s ease-out;
+    animation: changing 5s infinite;
   }
 
 }
