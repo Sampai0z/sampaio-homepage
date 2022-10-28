@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 400px;
+  top: 300px;
 }
 .name{
   font-family: 'Rubik', sans-serif;
@@ -31,7 +31,7 @@
 
 .typingDemo {
   width: 26ch;
-  animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
+  animation: typing 3s steps(11), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   flex-direction: column;
   overflow: hidden;
