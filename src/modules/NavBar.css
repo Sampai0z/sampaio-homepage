@@ -130,11 +130,12 @@
   height: 100rem;
   padding-top: 45px;
   padding-right: 20px;
-  flex-wrap: nowrap;
   color: white;
+  z-index: index;
 }
 .nav-bar__link{
-  
+  z-index:  7 !important;
+  display: flex;
 }
 
 @media (max-width: 1080px) {

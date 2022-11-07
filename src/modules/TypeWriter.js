@@ -1,12 +1,12 @@
 import React from "react";
-import { Cursor, cursor, useTypewriter } from "react-simple-typewriter";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 export default function TypeWriter() {
-	const [text, count] = useTypewriter({
+	const [text] = useTypewriter({
 		words: ["Frontend Developer", "Desenvolvedor Frontend"],
 		loop: true,
 		delaySpeed: 2000,
-		typeSpeed: 250,
+		typeSpeed: 130,
 	});
 	return (
 		<div>
