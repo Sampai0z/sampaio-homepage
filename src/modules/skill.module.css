@@ -1,0 +1,40 @@
+.skills,.skill_{
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+.porcentage ,.skills img:hover{
+  filter: grayscale();
+  transition-duration: 300;
+  transition: ease-in-out;
+  transition: 300ms ease-in-out;
+  background-color: white;
+  opacity: 1;
+  color: black;
+}
+.img{
+  border-radius: 100%;
+  border:  1px solid #292929; 
+  object-fit: cover; 
+  width: 100px;
+  height: 100px;
+}
+
+.porcentage{
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+.align_{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.skill_{
+  position: absolute;
+  opacity: 0;
+}
+.skills,.skill_:hover{
+  opacity: 1;
+}

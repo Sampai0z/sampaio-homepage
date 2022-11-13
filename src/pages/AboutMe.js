@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
+import Skill from "../modules/Skill";
+
 import classe from "./layout/AboutMe.module.css";
 import ProfileImage from "../assets/vitor.jpeg";
-import KnoledgeCard from "../modules/KnoledgeCard";
 
 export default function AboutMe() {
 	return (
@@ -43,14 +44,21 @@ export default function AboutMe() {
 									and I can work things out, I like to work with different
 									technologies.
 								</p>
-								<button className={classe.button_contact}>
-									<KnoledgeCard />
-								</button>
 							</div>
 						</div>
 					</div>
+					<div className={classe.skill}>
+						<Skill />
+						<Skill />
+						<Skill />
+						<Skill />
+					</div>
 				</div>
 			</div>
+
+			{/* <div className="container">
+				<div className="row"></div>
+			</div> */}
 		</motion.div>
 	);
 }

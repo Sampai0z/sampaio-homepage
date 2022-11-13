@@ -1,0 +1,42 @@
+.header{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.title{
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: rgb(129, 119, 119);
+  justify-content: center;
+}
+
+.work_card{
+  display: flex;
+  margin-left: 0.25rem;
+  padding-left: 100px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  padding: 10px;
+  width: 100%;
+}
+
+
+@media (min-width:1080px) {
+  .work_card{
+    display: flex;
+    margin-left: 0.25rem;
+    justify-content: center;
+    padding-left: 100px;
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    padding: 10px;
+    width: 100%;
+  }
+}
