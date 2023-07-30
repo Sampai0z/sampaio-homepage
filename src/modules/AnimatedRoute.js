@@ -13,7 +13,6 @@ export default function AnimatedRoute() {
 
 	return (
 		<div>
-			{/* <Backgrond> */}
 			<NavBar />
 			<AnimatePresence>
 				<Routes location={location} key={location.pathname}>
@@ -23,7 +22,6 @@ export default function AnimatedRoute() {
 					<Route path="/about" element={<AboutMe />} />
 				</Routes>
 			</AnimatePresence>
-			{/* </Backgrond> */}
 		</div>
 	);
 }

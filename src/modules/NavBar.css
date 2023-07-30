@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 .nav_bar_{
   display:flex;
   justify-content: center;
 }
 .nav-bar__list{
+  font-family: 'Shadows Into Light', cursive;
+
   display:flex;
   position: relative;
   justify-content: center;
@@ -17,18 +21,22 @@
   padding-top: 10px;
   margin-right: 50px;
   text-decoration: none;
-  color:white;
+  color:rgb(167, 40, 40);
 }
 .nav-bar__link{
+  font-size:  30px;
+  font-weight: 600;
   text-decoration: none;
-  color:white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  color:rgb(0, 0, 0);
 }
 .nav-bar__link:hover{
-  color:white;
+  color: black;
   border-bottom: 1px solid;
-  width: 100%;
   left: 0;
+  transition: transform .2s ease;
 }
+
 
 /* RESPONSIVE NAV-BAR */
 

@@ -13,9 +13,6 @@ export default function Works() {
 				<h3 className={classes.title}>My Works</h3>
 				<div className={classes.work_card}>
 					<WorkCard />
-					<WorkCard />
-					<WorkCard />
-					<WorkCard />
 				</div>
 			</div>
 		</motion.div>
