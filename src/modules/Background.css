@@ -1,4 +1,6 @@
 body {
 	background-image: url("../assets/paper.jpg");
-	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }

@@ -38,12 +38,10 @@ export default function NavBar() {
 			>
 				<div className="container">
 					<div className="row g-0">
-						<div className="col-md-6">
-							<Link to="/" className="nav-bar__image">
-								H
-							</Link>
+						<div className="col-md-7">
+							<Link to="/" className="nav-bar__image"></Link>
 						</div>
-						<div className="col-md-6">
+						<div className="col-md-5">
 							<nav>
 								<ul className="nav-bar__list">
 									<li>

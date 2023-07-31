@@ -156,6 +156,8 @@ export default function Contact() {
 									</div>
 									<div className={classes.second}>
 										<button className={classes.submit}>Submit Message</button>
+										<br></br>
+										<p style={{ color: "black" }}>*Please do not send spam</p>
 									</div>
 									<div>{sent ? <AlertSuccess /> : null}</div>
 									<div>{error ? <AlertError /> : null}</div>

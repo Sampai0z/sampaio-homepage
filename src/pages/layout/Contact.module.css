@@ -7,9 +7,10 @@
 }
 
 .text{
+  -webkit-text-stroke: 1px black;
   display: flex;
   justify-content: left;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgb(0, 0, 0);
   padding-bottom: 2rem;
   font-weight: 700;
   margin-bottom: 4rem;
@@ -23,29 +24,36 @@
   display: flex;
   justify-content: left;
   align-items: left;
-  border: 1px solid white;
   margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: #222222;
-  border: 1px solid rgb(45, 45, 45);
+  padding: 10px;  
+  color: black;
+  border: solid 2px #41403e;
+  border-radius: 265px 15px 235px 15px/15px 235px 15px 265px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  transition: all 0.5s ease;
   cursor:pointer;
 }
 .svg{
   display: flex;
   font-size: 1.5rem;
   margin-right: 10px;
+  
 }
 .contacts:hover{
-  color: rgb(52, 49, 77);
-  transition: 0.2s ease-in-out;
+  color: black;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+}
+.contact:hover{
+  color: black;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
 }
 .contact:active{
   color: rgb(52, 49, 77);
 }
 .link{
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .link:hover{
   color: rgb(52, 49, 77);
@@ -76,9 +84,12 @@
   border-radius: 15px;
   padding: 10px;
   width: 195px;
-  color: beige;
-  background-color: #222222;
-  border: 1px solid rgb(45, 45, 45);
+  color: black;
+  border: solid 2px #41403e;
+  border-radius: 265px 15px 235px 15px/15px 235px 15px 265px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  transition: all 0.5s ease;
    /*height: 35px; */
 }
 
@@ -88,29 +99,29 @@
   padding: 10px;
   width: 25rem;
   height: 8rem;
-  background-color: #222222;
-  border: 1px solid rgb(45, 45, 45);
+  color: black;
+  border: solid 2px #41403e;
+  border-radius: 265px 15px 235px 15px/15px 235px 15px 265px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  transition: all 0.5s ease;
   resize: none;
-  color: beige;
 }
 .submit{
   display: flex;
   justify-content: center;
   margin-top: 10px;
   padding: 13px;
-  color: white;
-  border: 1px solid purple;
-  border-radius: 50px;
-  background-color: purple;
-  transition: 0.2s ease-in-out;
-  box-shadow: 0px 1px 5px 1px rgb(0, 0, 0) inset, 0 0 1px 0 white;
   width: 200px;
+  border-radius: 265px 15px 235px 15px/15px 235px 15px 265px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  transition: all 0.5s ease;
 }
 .submit:hover{
-  color: purple;
-  background-color: #202023;
-  font-weight: bold;
-  box-shadow: 0px 1px 5px 1px rgb(140, 140, 140) inset,
+  font-weight: bold;  
+  color: black;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
 }
 .msg{
   display: none;

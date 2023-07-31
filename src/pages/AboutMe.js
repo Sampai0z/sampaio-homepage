@@ -33,8 +33,7 @@ export default function AboutMe() {
 								</h2>
 							</div>
 							<div>
-								<p>
-									{" "}
+								<p className={classe.paragrafo}>
 									I started as a programmer in Feb 2022, even though I didn’t
 									have professional experience I did work on solo projects and
 									also did some co-op work (not paid) to have more experience in
@@ -47,18 +46,8 @@ export default function AboutMe() {
 							</div>
 						</div>
 					</div>
-					<div className={classe.skill}>
-						<Skill />
-						<Skill />
-						<Skill />
-						<Skill />
-					</div>
 				</div>
 			</div>
-
-			{/* <div className="container">
-				<div className="row"></div>
-			</div> */}
 		</motion.div>
 	);
 }

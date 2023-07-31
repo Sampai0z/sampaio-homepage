@@ -1,24 +1,24 @@
 import React from "react";
-import { motion } from "framer-motion";
 import classe from "./skill.module.css";
 
 export default function Skill() {
 	return (
-		<div className={classe.skills}>
-			<motion.img
-				initial={{ y: -100, opacity: 0 }}
-				transition={{ duration: 1.2 }}
-				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ once: true }}
-				src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_96102ac6497377cd53da621075fe828e/sanity.png"
-				alt=""
-				className={classe.img}
-			/>
-			<div className={classe.skill_}>
-				<div className={classe.align_}>
-					<p className={classe.porcentage}>100%</p>
+		<>
+			<div className={classe.timeline}>
+				<div className={classe.timelineItem}>
+					<div className={classe.timelineContent}>
+						<h2>Evento 1</h2>
+						<p>Descrição do evento 1</p>
+					</div>
 				</div>
+				<div className={classe.timelineItem}>
+					<div className={classe.timelineContent}>
+						<h2>Evento 2</h2>
+						<p>Descrição do evento 2</p>
+					</div>
+				</div>
+				{/* Adicione mais eventos conforme necessário */}
 			</div>
-		</div>
+		</>
 	);
 }

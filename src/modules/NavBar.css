@@ -15,26 +15,19 @@
   padding-top: 20px;
   font-size: 20px;
 }
-.nav-bar__image{
-  display: flex;
-  position: relative;
-  padding-top: 10px;
-  margin-right: 50px;
-  text-decoration: none;
-  color:rgb(167, 40, 40);
-}
 .nav-bar__link{
   font-size:  30px;
   font-weight: 600;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
   color:rgb(0, 0, 0);
+  transition: 0.3s ease;
 }
 .nav-bar__link:hover{
   color: black;
   border-bottom: 1px solid;
   left: 0;
-  transition: transform .2s ease;
+  transition: .3s ease-in-out;
 }
 
 
