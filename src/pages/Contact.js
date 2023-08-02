@@ -73,7 +73,7 @@ export default function Contact() {
 					<div className="row">
 						<div className={classes.text}>
 							<h2>
-								Get in <spam className={classes.text2}>Touch</spam>
+								Get in <span className={classes.text2}>Touch</span>
 							</h2>
 						</div>
 					</div>
@@ -157,7 +157,7 @@ export default function Contact() {
 									<div className={classes.second}>
 										<button className={classes.submit}>Submit Message</button>
 										<br></br>
-										<p style={{ color: "black" }}>*Please do not send spam</p>
+										<p style={{ color: "black" }}>*Please do not send span</p>
 									</div>
 									<div>{sent ? <AlertSuccess /> : null}</div>
 									<div>{error ? <AlertError /> : null}</div>

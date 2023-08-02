@@ -16,7 +16,7 @@ export default function AboutMe() {
 				<div className="row g-0">
 					<div className="col-md-8">
 						<div>
-							{/* <spam className={classe.image_profile_back}></spam> */}
+							{/* <span className={classe.image_profile_back}></span> */}
 							<img
 								src={ProfileImage}
 								alt="my-profile"
@@ -29,7 +29,7 @@ export default function AboutMe() {
 						<div className={classe.content}>
 							<div>
 								<h2 className={classe.name}>
-									Vitor <spam className={classe.last_name}>Sampaio</spam>
+									Vitor <span className={classe.last_name}>Sampaio</span>
 								</h2>
 							</div>
 							<div>

@@ -15,7 +15,7 @@ export default function Home() {
 					<div className={classes.page}>
 						<div>
 							<h1 className={classes.name}>
-								Vitor <spam className={classes.last_name}>Sampaio</spam>
+								Vitor <span className={classes.last_name}>Sampaio</span>
 							</h1>
 							<p className={classes.mark}>
 								Hello, I'm an Frontend developer based in Portugal!
