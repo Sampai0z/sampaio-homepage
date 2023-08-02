@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import Skill from "../modules/Skill";
-
 import classe from "./layout/AboutMe.module.css";
 import ProfileImage from "../assets/vitor.jpeg";
 
