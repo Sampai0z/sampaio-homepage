@@ -11,9 +11,9 @@ import emailjs from "emailjs-com";
 import { Alert } from "@mui/material";
 
 export default function Contact() {
-	const [name, setName] = useState();
-	const [text, setText] = useState();
-	const [email, setEmail] = useState();
+	const [name, setName] = useState("");
+	const [text, setText] = useState("");
+	const [email, setEmail] = useState("");
 	const [sent, setSent] = useState(false);
 	const [error, setError] = useState(false);
 
@@ -29,7 +29,7 @@ export default function Contact() {
 	const AlertError = () => {
 		return (
 			<Alert variant="filled" severity="error" color="error">
-				Sorry but I couldn't send your message, try again later :C
+				Sorry but I couldn't send your message, try again later.
 			</Alert>
 		);
 	};
