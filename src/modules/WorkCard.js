@@ -12,23 +12,21 @@ const WorkCard = (props) => {
 	};
 
 	return (
-		<div className="container">
-			<div className="row g-0">
-				<div className="col-md-6">
-					<div className="quadro">
-						<img src={props.src} alt="teste" width={"100%"} />
-					</div>
+		<div className="col-md-6 pb-5">
+			<div className="col-md-12">
+				<div className="quadro">
+					<img src={props.src} alt="teste" width={"100%"} />
 				</div>
-				<div className="col-md-6">
-					<h2 className="heading">{props.heading}</h2>
-					<p className="description">{props.description}</p>
-					<button className="project_button" onClick={sourceCode}>
-						Application deployment
-					</button>
-					<button className="project_button" onClick={siteCode}>
-						Source code on Github
-					</button>
-				</div>
+			</div>
+			<div className="col-md-12">
+				<h2 className="heading">{props.heading}</h2>
+				<p className="description">{props.description}</p>
+				<button className="project_button" onClick={sourceCode}>
+					Application deployment
+				</button>
+				<button className="project_button" onClick={siteCode}>
+					Source code on Github
+				</button>
 			</div>
 		</div>
 	);

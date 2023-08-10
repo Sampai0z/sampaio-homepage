@@ -56,7 +56,7 @@ export default function NavBar() {
 									</li>
 									<li>
 										<Link to="/works" className="nav-bar__link">
-											Portfolio
+											Works
 										</Link>
 									</li>
 									<li>

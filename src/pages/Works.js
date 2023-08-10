@@ -55,18 +55,23 @@ export default function Works() {
 				<h3 className={classes.title}>
 					Here are some of the projects I've been working on!
 				</h3>
-				<div className={classes.work_card}>
-					{projects.map((project, index) => (
-						<WorkCard
-							key={index}
-							src={project.src}
-							heading={project.title}
-							description={project.description}
-							linkGit={project.linkGit}
-							linkSite={project.linkSite}
-						/>
-					))}
-				</div>
+
+				<span className={classes.work_card}>
+					<div className="container">
+						<div className="row g-0">
+							{projects.map((project, index) => (
+								<WorkCard
+									key={index}
+									src={project.src}
+									heading={project.title}
+									description={project.description}
+									linkGit={project.linkGit}
+									linkSite={project.linkSite}
+								/>
+							))}
+						</div>
+					</div>
+				</span>
 			</div>
 		</motion.div>
 	);
