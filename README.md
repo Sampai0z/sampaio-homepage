@@ -1,3 +1,6 @@
+This is my portfolio! to see in live click in the link bellow!
+https://sampaio-portfolio.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
