@@ -9,7 +9,7 @@ export default function Works() {
       title: "Netflix Clone",
       description:
         "Netflix Clone project is a web-based application that offers a collection of movies, TV shows, and documentaries in a user-friendly interface, inspired by Netflix's design.  *Didn't deploy yet* ",
-      linkSite: "https://mynetflixtest.netlify.app",
+      linkSite: "netflix-sampaio.netlify.app",
       linkGit: "https://github.com/Sampai0z/netflix-clone",
     },
     {
