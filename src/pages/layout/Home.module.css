@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap");
 
-.page{
+.page {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   top: 200px;
 }
-.name{
-  font-family: 'Rubik', sans-serif;
+.name {
+  font-family: "Rubik", sans-serif;
   display: flex;
   -webkit-text-stroke: 2px black;
   justify-content: center;
@@ -17,7 +17,7 @@
   text-transform: uppercase;
   gap: 15px;
 }
-.last_name{
+.last_name {
   color: #3769bb;
 }
 
@@ -26,20 +26,10 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  color: #8A8A8A;
-  top:150px;
+  color: #8a8a8a;
+  top: 150px;
 }
-.mark{
-  /* margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #313134; 
-  border-radius: 10px;
-  padding: 10px;
-  background-color: #313134;*/
-
-  /* From https://css.glass */
+.mark {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,15 +43,15 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(0, 0, 0, 0.699);
-} 
-.button__{
+}
+.button__ {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   top: 250px;
 }
-.button_contact{
+.button_contact {
   margin-top: 50px;
   display: flex;
   justify-content: center;
@@ -77,20 +67,19 @@
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   transition: all 0.5s ease;
 }
-.button_contact:hover{
+.button_contact:hover {
   color: black;
   box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
 }
 
 @media (max-width: 1080px) {
-  
-  .name{
+  .name {
     display: flex;
     font-size: 40px;
     text-transform: uppercase;
     gap: 10px;
   }
-  .page{
+  .page {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,7 +87,7 @@
     top: 200px;
     /* overflow: hidden; */
   }
-  .button__{
+  .button__ {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,5 +109,4 @@
     transition: 2s ease-out;
     animation: changing 5s infinite;
   } */
-
 }
