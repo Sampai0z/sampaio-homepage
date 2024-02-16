@@ -1,18 +1,20 @@
-.quadro{
+.quadro {
   border-radius: 265px 15px 235px 15px/15px 235px 15px 265px;
   background-color: rgba(255, 255, 255, 0);
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   margin: 20px;
 }
-.heading{
+.heading {
+  display: flex;
+  justify-content: center;
   color: black;
   margin-top: 20px;
 }
-.description{
-  color:black
+.description {
+  color: black;
 }
 
-.project_button{
+.project_button {
   margin: 10px;
   text-decoration: none;
   color: black;
@@ -25,7 +27,12 @@
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   transition: all 0.5s ease;
 }
-.project_button:hover{
+.project_button:hover {
   color: black;
   box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }

@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -8,28 +8,32 @@
   overflow: hidden;
 }
 
-.title{
+.title {
   margin-top: 100px;
   text-transform: uppercase;
   color: rgb(59, 55, 55);
   justify-content: center;
 }
 
-.work_card{
+.work_card {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 55rem;
   margin: 30px;
   padding: 30px;
 }
 
-
-@media (min-width:1900px) {
-  .work_card{
+@media (min-width: 1900px) {
+  .work_card {
     display: flex;
     margin-left: 0.25rem;
     justify-content: center;
     padding-left: 100px;
     padding: 10px;
+  }
+}
+@media (max-width: 584px) {
+  .work_card {
+    width: 100%;
   }
 }
