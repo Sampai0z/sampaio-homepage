@@ -91,7 +91,7 @@ export default function NavBar() {
               About
             </Link>
             <Link to="/works" className="link-responsive" onClick={toggleAll}>
-              Portfolio
+              Works
             </Link>
             <Link
               to="/contact-me"

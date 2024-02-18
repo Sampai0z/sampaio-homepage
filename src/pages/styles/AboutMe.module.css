@@ -1,0 +1,150 @@
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  width: 50%;
+}
+
+.last_name {
+  color: #3769bb;
+}
+.paragraph {
+  color: black;
+  font-size: 18px;
+  text-indent: 20px;
+  width: 100%;
+  text-align: justify;
+}
+.image_profile {
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: 6px 10px 20px 5px rgba(58, 54, 54, 0.761);
+  margin: 4rem;
+}
+
+.skill {
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 10px 10px 10px;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.h3,
+.h3Bio,
+.h3Love,
+.h3Web {
+  font-size: 23px;
+  font-weight: bold;
+  border-bottom: 4px solid rgb(82, 82, 82);
+}
+.h3 {
+  width: 60px;
+}
+.h3Love {
+  width: 40px;
+}
+.h3Bio {
+  width: 40px;
+  margin-bottom: 5px;
+}
+.h3Web {
+  width: 86px;
+}
+.bio {
+  display: flex;
+  margin: 5px;
+}
+.year {
+  font-weight: 700;
+}
+.paragraphBio {
+  margin-left: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  padding: 10px;
+  margin: 0px 20px;
+  border-radius: 265px 15px 235px 15px/15px 235px 15px 265px;
+  border: solid 2px #41403e;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  transition: all 0.5s ease;
+}
+.button:hover {
+  color: black;
+  box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
+}
+.profile {
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255);
+}
+.link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.link:hover {
+  color: black;
+}
+
+@media (max-width: 1080px) {
+  .aboutMe {
+    top: 330px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+    right: 1%;
+    /* top: -100px; */
+  }
+  .image_profile {
+    top: -200px;
+    display: flex;
+  }
+  .name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .align {
+    width: 100%;
+  }
+}

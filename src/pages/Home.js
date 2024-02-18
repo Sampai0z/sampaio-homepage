@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import classes from "./layout/Home.module.css";
+import classes from "./styles/Home.module.css";
 import { motion } from "framer-motion";
 import Text from "../modules/TypeWriter.js";
 

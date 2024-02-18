@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
-import classes from "./layout/Contact.module.css";
+import classes from "./styles/Contact.module.css";
 import {
   FaLinkedin,
   FaGithub,
   FaPhone,
   FaSearchLocation,
 } from "react-icons/fa";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import emailjs from "emailjs-com";
+
 import { Alert } from "@mui/material";
 
 export default function Contact() {
@@ -21,39 +22,49 @@ export default function Contact() {
 
   const AlertSuccess = () => {
     return (
-      <Alert variant="filled" severity="success" color="info">
-        Your message has been sent !
-      </Alert>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 30 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Alert variant="filled" severity="success" color="info">
+          Your message has been sent !
+        </Alert>
+      </motion.div>
     );
   };
   const AlertError = () => {
     return (
-      <Alert variant="filled" severity="error" color="error">
-        Sorry but I couldn't send your message, try again later.
-      </Alert>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: 30 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Alert variant="filled" severity="error" color="error">
+          Sorry but I couldn't send your message, try again later.
+        </Alert>
+      </motion.div>
     );
   };
 
+  const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const userId = process.env.REACT_APP_EMAILJS_USER_ID;
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        // "service_p6wtjpu",
-        "service_p6wtjpu",
-        "template_zw31fi9",
-        form.current,
-        "FtE4qZUF-2PluB5FX"
-      )
-      .then(
-        (result) => {
-          setSent(true);
-          resetForm();
-        },
-        (error) => {
-          setError(true);
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(serviceId, templateId, form.current, userId).then(
+      (result) => {
+        setSent(true);
+        resetForm();
+      },
+      (error) => {
+        setError(true);
+        console.log(error.text);
+      }
+    );
   };
 
   const resetForm = () => {
@@ -61,6 +72,20 @@ export default function Contact() {
     setEmail("");
     setText("");
   };
+
+  useEffect(() => {
+    if (error) {
+      // Set a timeout to hide the error after 3 seconds
+      const timeoutId = setTimeout(() => {
+        setError(false);
+      }, 3000);
+
+      // Clean up the timeout to avoid memory leaks
+      return () => {
+        clearTimeout(timeoutId);
+      };
+    }
+  }, [error]);
 
   return (
     <motion.div

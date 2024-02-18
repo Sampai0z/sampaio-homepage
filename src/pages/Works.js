@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import WorkCard from "../modules/WorkCard";
-import classes from "./layout/Works.module.css";
+import classes from "./styles/Works.module.css";
 
 export default function Works() {
   const projects = [
