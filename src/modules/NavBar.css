@@ -13,6 +13,7 @@
   padding-top: 20px;
   font-size: 10px;
 }
+.nav-bar__link_git,
 .nav-bar__link {
   font-size: 20px;
   font-weight: 600;
@@ -21,7 +22,8 @@
   color: rgb(0, 0, 0);
   transition: 0.3s ease;
 }
-.nav-bar__link:hover {
+.nav-bar__link:hover,
+.nav-bar__link_git:hover {
   color: black;
   border-bottom: 1px solid;
   left: 0;
@@ -135,6 +137,10 @@
 .nav-bar__link {
   z-index: 7 !important;
   display: flex;
+}
+.nav-bar__link_git {
+  display: flex;
+  gap: 0.5rem;
 }
 
 @media (max-width: 1080px) {
