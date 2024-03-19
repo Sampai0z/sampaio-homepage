@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </div>
       <div className={classes.button__}>
-        <Link to="/contact-me" className={classes.button_contact}>
+        <Link to="/contact" className={classes.button_contact}>
           Get in Touch
         </Link>
       </div>
