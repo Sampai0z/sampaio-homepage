@@ -29,6 +29,9 @@ export default function Home() {
         </div>
       </div>
       <div className={classes.button__}>
+        <Link to="/works" className={classes.button_contact}>
+          See what I’ve built
+        </Link>
         <Link to="/contact" className={classes.button_contact}>
           Get in Touch
         </Link>

@@ -18,9 +18,12 @@ const WorkCard = (props) => {
           <img src={props.src} alt="teste" width={"90%"} />
         </div>
       </div>
-      <div className="col-md-12">
+      <div className="col-md-11">
         <h2 className="heading">{props.heading}</h2>
         <p className="description">{props.description}</p>
+        <p>
+          <b>Tech Stack</b>: {props.tech}
+        </p>
         <div className="buttons">
           <button className="project_button" onClick={sourceCode}>
             Application deployment

@@ -50,6 +50,7 @@
   align-items: center;
   position: relative;
   top: 250px;
+  gap: 10px;
 }
 .button_contact {
   margin-top: 50px;
@@ -60,7 +61,7 @@
   color: black;
   font-weight: bold;
   border: solid 2px #41403e;
-  width: 160px;
+  width: 180px;
   padding: 10px;
   border-radius: 265px 15px 235px 15px/15px 235px 15px 265px;
   background-color: rgba(255, 255, 255, 0);
